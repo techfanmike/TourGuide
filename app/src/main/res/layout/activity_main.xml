@@ -16,23 +16,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/SIGHTS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/SIGHTS_STRING" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/FOOD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/FOOD_STRING" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/SHOPPING"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/SHOPPING_STRING" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"   />
     </android.support.design.widget.TabLayout>
 
 </android.support.constraint.ConstraintLayout>
