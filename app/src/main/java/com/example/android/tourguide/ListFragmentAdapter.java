@@ -17,6 +17,7 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int tabNumber) {
         Fragment returnVal = null;
 
+        // looks suspiciously close to a factory pattern
         switch (tabNumber) {
             case 0:
                 returnVal = new SightsFrag();

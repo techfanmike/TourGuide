@@ -1,6 +1,7 @@
 package com.example.android.tourguide;
 
 import android.content.res.Resources;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +18,8 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     //inject bindings
-    @BindView(R.id.tab_view) ViewPager viewPager;
+    @BindView(R.id.pager_view) ViewPager viewPager;
+    @BindView(R.id.tab_layout) TabLayout tabLayout;
 
     private ArrayList<TourListEntry> mSights = null;
     private ArrayList<TourListEntry> mFood = null;
@@ -31,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
         // call the butterknife binding method
         ButterKnife.bind(this);
 
-        // instantiate our FragmentPagerAdapter
+        // instantiate our FragmentPagerAdapter and bind the adapter
+        ListFragmentAdapter fragAdapter = new ListFragmentAdapter(this, getSupportFragmentManager());
+        viewPager.setAdapter(fragAdapter);
 
-
-
+        // setup the tabs
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     public void populateArray(ArrayList array, String fileName) {
