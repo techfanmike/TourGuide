@@ -14,7 +14,7 @@ public class Utility {
 
             int resourceID = resource.getIdentifier(fileName , "raw", packageName);
 
-            InputStream is = resource.openRawResource(R.raw.sights);
+            InputStream is = resource.openRawResource(resourceID);
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader reader = new BufferedReader(isr);
             String line;
