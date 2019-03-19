@@ -9,9 +9,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Utility {
-    public static void populateArray(ArrayList<TourListEntry> array, String fileName, Resources resource) {
+    public static void populateArray(ArrayList<TourListEntry> array, String fileName, Resources resource, String pck) {
         try {
-            // parameterize
+
+            int resourceID = resource.getIdentifier(fileName , "raw", pck);
+
             InputStream is = resource.openRawResource(R.raw.sights);
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader reader = new BufferedReader(isr);

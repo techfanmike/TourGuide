@@ -20,7 +20,7 @@ public class SightsFrag extends Fragment {
 
         // create an array and populate
         ArrayList<TourListEntry> foodArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(foodArray, "sights", getResources());
+        Utility.populateArray(foodArray, "sights", getResources(), getContext().getPackageName());
 
         ListView listView = view.findViewById(R.id.list_view);
         listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, foodArray));

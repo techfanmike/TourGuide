@@ -21,7 +21,7 @@ public class ShoppingFrag extends Fragment {
 
         // create an array and populate
         ArrayList<TourListEntry> foodArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(foodArray, "shopping", getResources());
+        Utility.populateArray(foodArray, "shopping", getResources(), getContext().getPackageName());
 
         ListView listView = view.findViewById(R.id.list_view);
         listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, foodArray));
