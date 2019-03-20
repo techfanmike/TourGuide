@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,8 +18,12 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
         super(context, resource, tourList);
     }
 
-    @BindView(R.id.titleName) TextView title;
-    @BindView(R.id.DescriptionName) TextView description;
+    @BindView(R.id.titleName)
+    TextView title;
+    @BindView(R.id.DescriptionName)
+    TextView description;
+    @BindView(R.id.PointImage)
+    ImageView image;
 
     @Override
     public View getView(int position, View convertView, ViewGroup container) {
@@ -35,6 +40,7 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
 
         title.setText(entry.getName());
         description.setText(entry.getDescription());
+        image.setImageResource(R.mipmap.image_varsity_foreground);
 
         return convertView;
     }

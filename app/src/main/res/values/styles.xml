@@ -9,18 +9,19 @@
     </style>
 
     <style name="TitleTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginStart">8dp</item>
     </style>
 
     <style name="DescriptionTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_below">@id/titleName</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginStart">8dp</item>
     </style>
 
 
