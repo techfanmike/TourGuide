@@ -18,6 +18,7 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
     }
 
     @BindView(R.id.titleName) TextView title;
+    @BindView(R.id.DescriptionName) TextView description;
 
     @Override
     public View getView(int position, View convertView, ViewGroup container) {
@@ -33,6 +34,7 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
         ButterKnife.bind(this, convertView);
 
         title.setText(entry.getName());
+        description.setText(entry.getDescription());
 
         return convertView;
     }

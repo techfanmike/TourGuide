@@ -10,8 +10,12 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
     public ListFragmentAdapter(Context context, FragmentManager fragMan) {
+
         super(fragMan);
+        mContext = context;
     }
+
+
 
     @Override
     public Fragment getItem(int tabNumber) {
@@ -48,10 +52,13 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 returnVal = mContext.getString(R.string.SIGHTS_STRING);
+                break;
             case 1:
                 returnVal = mContext.getString(R.string.FOOD_STRING);
+                break;
             case 2:
                 returnVal = mContext.getString(R.string.SHOPPING_STRING);
+                break;
         }
 
         return returnVal;

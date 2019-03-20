@@ -22,7 +22,7 @@ public class Utility {
             // read a line until done when null returned
             while ((line = reader.readLine()) != null) {
                 String[] splitString = line.split(",");
-                array.add(new TourListEntry(splitString[0].trim()));
+                array.add(new TourListEntry(splitString[0].trim(), splitString[1].trim()));
             }
         } catch (IOException e) {
             ;
