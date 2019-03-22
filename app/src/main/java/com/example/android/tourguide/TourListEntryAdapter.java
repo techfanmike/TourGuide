@@ -40,7 +40,11 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
 
         title.setText(entry.getName());
         description.setText(entry.getDescription());
-        image.setImageResource(R.mipmap.image_varsity_foreground);
+
+        // get the resource id for the album art image we will bind to the album art UI element
+        int resourceID = getContext().getResources().getIdentifier(entry.getPicture(), "mipmap",
+            getContext().getPackageName());
+        image.setImageResource(resourceID);
 
         return convertView;
     }

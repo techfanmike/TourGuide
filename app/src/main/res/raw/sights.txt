@@ -1,5 +1,4 @@
-Tech Tower, The most famous campus landmark
-McCamish Pavilion, One of the best places to watch college basketball
-Grant Field, Home of the Georgia Tech Jacket football team
-Companile Fountain, A fountain with a giant shaft as its centerpiece
-Van Leer Building, A soul crushing torture chamber of hopelessness.  The spirits of once happy youth wander in a zombie like haze searching for long departed and unrecoverable happiness.
+Tech Tower, The most famous campus landmark, tech_foreground
+McCamish Pavilion, One of the best places to watch college basketball, mccamish_foreground
+Grant Field, Home of the Georgia Tech Jacket football team, grant_foreground
+Companile Fountain, A fountain with a giant shaft as its centerpiece, companile_foreground

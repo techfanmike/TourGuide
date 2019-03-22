@@ -3,10 +3,12 @@ package com.example.android.tourguide;
 class TourListEntry {
     private String mName = "";
     private String mDescription = "";
+    private String mPicture = "";
 
-    public TourListEntry(String name, String description) {
+    public TourListEntry(String name, String description, String picture) {
         mName = name;
         mDescription = description;
+        mPicture = picture;
     }
 
     public String getName() {
@@ -15,5 +17,9 @@ class TourListEntry {
 
     public String getDescription() {
         return mDescription;
+    }
+
+    public String getPicture() {
+        return mPicture;
     }
 }
