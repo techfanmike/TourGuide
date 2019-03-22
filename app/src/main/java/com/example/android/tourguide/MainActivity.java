@@ -18,10 +18,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tab_layout)
     TabLayout tabLayout;
 
-    private ArrayList<TourListEntry> mSights = null;
-    private ArrayList<TourListEntry> mFood = null;
-    private ArrayList<TourListEntry> mShopping = null;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
