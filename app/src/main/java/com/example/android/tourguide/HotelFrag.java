@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// fragment to hold hotels
 public class HotelFrag extends Fragment {
     public HotelFrag() {
         ;

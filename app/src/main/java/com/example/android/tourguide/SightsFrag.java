@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// fragment to hold sightseeing locations
 public class SightsFrag extends Fragment {
     public SightsFrag() {
         ;

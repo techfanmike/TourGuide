@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+// the different fragments load their content, so create a utility to load the content from a text file
 public class Utility {
     public static void populateArray(ArrayList<TourListEntry> array, String fileName, Resources resource, String packageName) {
         try {

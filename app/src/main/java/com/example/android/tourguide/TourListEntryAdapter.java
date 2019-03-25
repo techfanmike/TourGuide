@@ -19,6 +19,7 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
         super(context, resource, tourList);
     }
 
+    // implement a class for the view holder pattern
     static private class ViewHolder {
         private TextView titleName;
         private TextView description;
@@ -33,11 +34,10 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
     @BindView(R.id.PointImage)
     ImageView image;
 
-    ViewHolder holder;
-
     @Override
     public View getView(int position, View convertView, ViewGroup container) {
 
+        // instantiate the view holder class
         ViewHolder holder;
 
         // if a new list, inflate a new list item
@@ -48,18 +48,21 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
             // call the butterknife binding method
             ButterKnife.bind(this, convertView);
 
+            // assign the view holder variables
             holder = new ViewHolder();
             holder.titleName = title;
             holder.description = description;
             holder.image = image;
             convertView.setTag(holder);
         } else {
+            // existing item, so grab the save view holder
             holder = (ViewHolder) convertView.getTag();
         }
 
         // get a handle to the item in the array indexed by position
         TourListEntry entry = getItem(position);
 
+        // set the text fields
         holder.titleName.setText(entry.getName());
         holder.description.setText(entry.getDescription());
 

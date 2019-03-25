@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// fragment to hold shopping locations
 public class ShoppingFrag extends Fragment {
     public ShoppingFrag() {
         ;

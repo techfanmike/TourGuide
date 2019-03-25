@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+// fragment to hold food locations
 public class FoodFrag extends Fragment {
     public FoodFrag() {;
     }

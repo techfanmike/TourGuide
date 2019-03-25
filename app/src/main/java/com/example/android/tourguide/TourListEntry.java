@@ -1,5 +1,6 @@
 package com.example.android.tourguide;
 
+// data class for the list items
 class TourListEntry {
     private String mName = "";
     private String mDescription = "";
