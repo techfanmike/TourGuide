@@ -1,5 +1,5 @@
 The Varsity, Cheap and your gut will never be the same, varsity_foreground
-Chick-fil-A, Decent chicken as long as it is not Sunday, chick_foreground
+Chick-fil-A, Decent chicken except on Sundays, chick_foreground
 Panda Express, Fast and really good eats, panda_foreground
 Sublime Doughnuts, Fast cheap good empty calories, sublime_foreground
 Rocky Mountain Pizza Co., Some of the best pizza around, rocky_foreground
