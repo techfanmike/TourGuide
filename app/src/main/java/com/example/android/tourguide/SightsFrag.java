@@ -9,11 +9,18 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 // fragment to hold sightseeing locations
 public class SightsFrag extends Fragment {
     public SightsFrag() {
         ;
     }
+
+    @BindView(R.id.list_view)
+    ListView listView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle instanceState) {
 
@@ -23,7 +30,9 @@ public class SightsFrag extends Fragment {
         ArrayList<TourListEntry> sightsArray = new ArrayList<TourListEntry>();
         Utility.populateArray(sightsArray, "sights", getResources(), getContext().getPackageName());
 
-        ListView listView = view.findViewById(R.id.list_view);
+        // call the butterknife binding method
+        ButterKnife.bind(this, view);
+
         listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, sightsArray));
 
         return view;

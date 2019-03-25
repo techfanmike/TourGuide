@@ -9,11 +9,17 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 // fragment to hold shopping locations
 public class ShoppingFrag extends Fragment {
     public ShoppingFrag() {
         ;
     }
+
+    @BindView(R.id.list_view)
+    ListView listView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle instanceState) {
@@ -24,7 +30,9 @@ public class ShoppingFrag extends Fragment {
         ArrayList<TourListEntry> shoppingArray = new ArrayList<TourListEntry>();
         Utility.populateArray(shoppingArray, "shopping", getResources(), getContext().getPackageName());
 
-        ListView listView = view.findViewById(R.id.list_view);
+        // call the butterknife binding method
+        ButterKnife.bind(this, view);
+
         listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, shoppingArray));
 
         return view;

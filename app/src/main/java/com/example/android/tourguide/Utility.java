@@ -13,8 +13,10 @@ public class Utility {
     public static void populateArray(ArrayList<TourListEntry> array, String fileName, Resources resource, String packageName) {
         try {
 
+            // get the resource id for the raw directory
             int resourceID = resource.getIdentifier(fileName , "raw", packageName);
 
+            // instantiate the usual file reading objects
             InputStream is = resource.openRawResource(resourceID);
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader reader = new BufferedReader(isr);
@@ -25,8 +27,9 @@ public class Utility {
                 String[] splitString = line.split(",");
                 array.add(new TourListEntry(splitString[0].trim(), splitString[1].trim(), splitString[2].trim()));
             }
+
         } catch (IOException e) {
-            ;
+            // flagrant optimism;
         }
     }
 }
