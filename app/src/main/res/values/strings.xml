@@ -3,5 +3,6 @@
     <string name="SIGHTS_STRING">Sights</string>
     <string name="FOOD_STRING">Food</string>
     <string name="SHOPPING_STRING">Shopping</string>
+    <string name="HOTEL_STRING">Hotels</string>
     <string name="location_name">Location Name</string>
 </resources>

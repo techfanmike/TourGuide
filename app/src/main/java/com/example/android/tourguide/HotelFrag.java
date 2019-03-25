@@ -9,8 +9,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ShoppingFrag extends Fragment {
-    public ShoppingFrag() {
+public class HotelFrag extends Fragment {
+    public HotelFrag() {
         ;
     }
 
@@ -20,11 +20,11 @@ public class ShoppingFrag extends Fragment {
         View view = inflater.inflate(R.layout.tour_list_layout, container, false);
 
         // create an array and populate
-        ArrayList<TourListEntry> shoppingArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(shoppingArray, "shopping", getResources(), getContext().getPackageName());
+        ArrayList<TourListEntry> hotelArray = new ArrayList<TourListEntry>();
+        Utility.populateArray(hotelArray, "hotel", getResources(), getContext().getPackageName());
 
         ListView listView = view.findViewById(R.id.list_view);
-        listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, shoppingArray));
+        listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, hotelArray));
 
         return view;
     }

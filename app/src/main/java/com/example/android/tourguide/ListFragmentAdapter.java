@@ -15,8 +15,6 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
-
-
     @Override
     public Fragment getItem(int tabNumber) {
         Fragment returnVal = null;
@@ -32,9 +30,10 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
             case 2:
                 returnVal = new ShoppingFrag();
                 break;
-            default:
-                returnVal = null;
+            case 3:
+                returnVal = new HotelFrag();
                 break;
+            // not setting a default, already set returnVal to null
         }
 
         return returnVal;
@@ -42,7 +41,7 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -59,8 +58,10 @@ public class ListFragmentAdapter extends FragmentPagerAdapter {
             case 2:
                 returnVal = mContext.getString(R.string.SHOPPING_STRING);
                 break;
+            case 3:
+                returnVal = mContext.getString(R.string.HOTEL_STRING);
+                break;
         }
-
         return returnVal;
     }
 }

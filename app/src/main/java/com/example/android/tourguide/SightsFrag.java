@@ -19,11 +19,11 @@ public class SightsFrag extends Fragment {
         View view = inflater.inflate(R.layout.tour_list_layout, container, false);
 
         // create an array and populate
-        ArrayList<TourListEntry> foodArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(foodArray, "sights", getResources(), getContext().getPackageName());
+        ArrayList<TourListEntry> sightsArray = new ArrayList<TourListEntry>();
+        Utility.populateArray(sightsArray, "sights", getResources(), getContext().getPackageName());
 
         ListView listView = view.findViewById(R.id.list_view);
-        listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, foodArray));
+        listView.setAdapter(new TourListEntryAdapter(getActivity(), R.layout.tour_list_item_layout, sightsArray));
 
         return view;
     }
