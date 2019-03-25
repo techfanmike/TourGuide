@@ -27,7 +27,7 @@ public class FoodFrag extends Fragment {
 
         // create an array and populate
         ArrayList<TourListEntry> foodArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(foodArray, "food", getResources(), getContext().getPackageName());
+        Utility.populateArray(foodArray, getString(R.string.food_string), getResources(), getContext().getPackageName());
 
         // call the butterknife binding method
         ButterKnife.bind(this, view);

@@ -28,7 +28,7 @@ public class HotelFrag extends Fragment {
 
         // create an array and populate
         ArrayList<TourListEntry> hotelArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(hotelArray, "hotel", getResources(), getContext().getPackageName());
+        Utility.populateArray(hotelArray, getString(R.string.hotel_string), getResources(), getContext().getPackageName());
 
         // call the butterknife binding method
         ButterKnife.bind(this, view);

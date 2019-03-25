@@ -28,7 +28,7 @@ public class SightsFrag extends Fragment {
 
         // create an array and populate
         ArrayList<TourListEntry> sightsArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(sightsArray, "sights", getResources(), getContext().getPackageName());
+        Utility.populateArray(sightsArray, getString(R.string.sights_string), getResources(), getContext().getPackageName());
 
         // call the butterknife binding method
         ButterKnife.bind(this, view);

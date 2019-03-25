@@ -28,7 +28,7 @@ public class ShoppingFrag extends Fragment {
 
         // create an array and populate
         ArrayList<TourListEntry> shoppingArray = new ArrayList<TourListEntry>();
-        Utility.populateArray(shoppingArray, "shopping", getResources(), getContext().getPackageName());
+        Utility.populateArray(shoppingArray, getString(R.string.shopping_string), getResources(), getContext().getPackageName());
 
         // call the butterknife binding method
         ButterKnife.bind(this, view);
