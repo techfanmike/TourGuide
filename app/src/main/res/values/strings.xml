@@ -9,4 +9,5 @@
     <string name="hotel_string">hotel</string>
     <string name="shopping_string">shopping</string>
     <string name="sights_string">sights</string>
+    <string name="folder_string">drawable</string>
 </resources>

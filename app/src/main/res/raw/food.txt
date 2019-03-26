@@ -1,6 +1,6 @@
-The Varsity, Cheap and your gut will never be the same, varsity_foreground
-Chick-fil-A, Decent chicken except on Sundays, chick_foreground
-Panda Express, Fast and really good eats, panda_foreground
-Sublime Doughnuts, Fast cheap good empty calories, sublime_foreground
-Rocky Mountain Pizza Co., Some of the best pizza around, rocky_foreground
-Papa John's Pizza, Typical chain pizza, papa_foreground
+The Varsity, Cheap and your gut will never be the same, varsity
+Chick-fil-A, Decent chicken except on Sundays, chick
+Panda Express, Fast and really good eats, panda
+Sublime Doughnuts, Fast cheap good empty calories, sublime
+Rocky Mountain Pizza Co., Some of the best pizza around, rocky
+Papa John's Pizza, Typical chain pizza, papa

@@ -1,4 +1,4 @@
-Barnes & Noble, A good place to pay too much, barnes_foreground
-Engineers Bookstore, A gone classic always remembered, engineers_foreground
-The Salvation Army, The stop for some smelly dorm room attire, salvation_foreground
-Sam Flax, An old favorite worth a stop just to wander the aisles, sam_foreground
+Barnes & Noble, A good place to pay too much, barnes
+Engineers Bookstore, A gone classic always remembered, engineers
+The Salvation Army, The stop for some smelly dorm room attire, salvation
+Sam Flax, An old favorite worth a stop just to wander the aisles, sam

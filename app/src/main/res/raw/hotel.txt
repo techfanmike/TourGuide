@@ -1,4 +1,4 @@
-Hampton Inn, Great location near the stadium, hampton_foreground
-Renaissance Hotel Midtown,  Upscale accommodations across the connector from campus, renaissance_foreground
-Georgia Tech Hotel and Conference Center, The official place to stay but not necessarily as nice as other options, gt_foreground
-Hilton, This property has become dated and endured several management changes, hilton_foreground
+Hampton Inn, Great location near the stadium, hampton
+Renaissance Hotel Midtown,  Upscale accommodations across the connector from campus, renaissance
+Georgia Tech Hotel and Conference Center, The official place to stay but not necessarily as nice as other options, gt
+Hilton, This property has become dated and endured several management changes, hilton

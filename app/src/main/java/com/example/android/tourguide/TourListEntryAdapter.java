@@ -66,7 +66,8 @@ public class TourListEntryAdapter extends ArrayAdapter<TourListEntry> {
         holder.description.setText(entry.getDescription());
 
         // get the resource id for the album art image we will bind to the album art UI element
-        int resourceID = getContext().getResources().getIdentifier(entry.getPicture(), "mipmap",
+        int resourceID = getContext().getResources().getIdentifier(entry.getPicture(),
+                getContext().getResources().getString(R.string.folder_string),
                 getContext().getPackageName());
         holder.image.setImageResource(resourceID);
 

@@ -1,4 +1,4 @@
-Tech Tower, The most famous campus landmark, tech_foreground
-McCamish Pavilion, One of the best places to watch college basketball, mccamish_foreground
-Grant Field, Home of the Georgia Tech Jacket football team, grant_foreground
-Companile Fountain, A fountain with a giant shaft as its centerpiece, companile_foreground
+Tech Tower, The most famous campus landmark, tech
+McCamish Pavilion, One of the best places to watch college basketball, mccamish
+Grant Field, Home of the Georgia Tech Jacket football team, grant
+Companile Fountain, A fountain with a giant shaft as its centerpiece, companile
